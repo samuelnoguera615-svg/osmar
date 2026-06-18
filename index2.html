@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulo 2</title>
+    <link rel="stylesheet" href="tienda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="imagen/WhatsApp Image 2026-06-15 at 9.10.39 PM.jpeg" alt="Logo Estudiantes EM" class="logo">
+                <h1>Tienda On.line</h1>
+                <ul>
+                    <li><a href="tienda.html">Inicio</a></li>
+                    <li><a href="Articulo1.html">Articulo 1</a></li>
+                    <li><a href="Articulo2.html">Articulo 2</a></li>
+                    <li><a href="Articulo3.html">Articulo 3</a></li>
+                    <li><a href="Articulo4.html">Articulo 4</a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count" class="cart-count">0</span></a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="videof" id="home">
+        <!-- El video de fondo -->
+        <video autoplay muted loop playsinline id="miVideo">
+            <source src="imgene/Anuncio 100 Años de BMW - BMW España (360p, h264).mp4" type="video/mp4">
+                Tu navegador no soporta video.
+        </video>
+
+        <!-- Contenido sobre el video -->
+        <div class="contenido">
+            <h1 class="hero-title">Colección 2: Minimalismo y Tendencia Diaria</h1>
+            <p class="hero-subtitle">Explora piezas finas y sutiles perfectas para un estilo juvenil y cotidiano.</p>
+            <button id="cta" class="btn-primary">Ver Productos</button>
+        </div>
+
+    </section>
+
+    <section class="collection-overview">
+        <div class="container">
+            <h2>Colección 2: Minimalismo y Tendencia Diaria (Productos)</h2>
+            <div class="overview-content">
+                <div class="overview-image">
+                    <img src="imagen/coleccion 2.jpeg" alt="Todos los productos de Colección 2">
+                </div>
+                <div class="overview-list">
+                    <h3>Lista de Productos</h3>
+                    <ul>
+                        <li>
+                            <span>Cadena Delgada Tiffany Smile</span>
+                            <span class="price">$320 USD</span>
+                            <button onclick="agregarAlCarrito('Cadena Delgada Tiffany Smile', 320.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Collar con Inicial Pandora</span>
+                            <span class="price">$180 USD</span>
+                            <button onclick="agregarAlCarrito('Collar con Inicial Pandora', 180.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Pulsera Pandora Moments</span>
+                            <span class="price">$220 USD</span>
+                            <button onclick="agregarAlCarrito('Pulsera Pandora Moments', 220.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Anillo Delicado Cartier Love</span>
+                            <span class="price">$290 USD</span>
+                            <button onclick="agregarAlCarrito('Anillo Delicado Cartier Love', 290.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Anillo Corazón Tiffany</span>
+                            <span class="price">$260 USD</span>
+                            <button onclick="agregarAlCarrito('Anillo Corazón Tiffany', 260.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Zarcillos Estrella Pandora</span>
+                            <span class="price">$90 USD</span>
+                            <button onclick="agregarAlCarrito('Zarcillos Estrella Pandora', 90.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Zarcillos Luna Pandora</span>
+                            <span class="price">$90 USD</span>
+                            <button onclick="agregarAlCarrito('Zarcillos Luna Pandora', 90.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Collar Punto de Luz Tiffany</span>
+                            <span class="price">$280 USD</span>
+                            <button onclick="agregarAlCarrito('Collar Punto de Luz Tiffany', 280.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Tobillera de Oro Fina</span>
+                            <span class="price">$120 USD</span>
+                            <button onclick="agregarAlCarrito('Tobillera de Oro Fina', 120.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Cadena Barra Horizontal Tiffany</span>
+                            <span class="price">$240 USD</span>
+                            <button onclick="agregarAlCarrito('Cadena Barra Horizontal Tiffany', 240.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Pulsera Infinito Pandora</span>
+                            <span class="price">$150 USD</span>
+                            <button onclick="agregarAlCarrito('Pulsera Infinito Pandora', 150.00)">Añadir</button>
+                        </li>
+                        <li>
+                            <span>Collar Doble Capa Tiffany</span>
+                            <span class="price">$340 USD</span>
+                            <button onclick="agregarAlCarrito('Collar Doble Capa Tiffany', 340.00)">Añadir</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrusel">
+            <h2>Nuestras Marcas</h2>
+            <div class="carrusel-container">
+                <div class="carrusel-track">
+                    <img src="imagen/cartier.jpg" alt="Marca 1">
+                    <img src="imagen/Tiffany & Co.jpg" alt="Marca 2">
+                    <img src="imagen/Bvlgari.jpg" alt="Marca 3">
+                    <img src="imagen/Van Cleef & Arpels.jpg" alt="marca 4">
+                    <img src="imagen/Chopard.jpg" alt="marca5">
+                    <img src="imagen/Buccellati.jpg" alt="marca 6">
+                    <img src="imagen/Harry Winston.jpg" alt="marca 7">
+                    <img src="imagen/Pandora.jpg" alt="marca 8">
+                    <!-- Más marcas -->
+                </div>
+            </div>
+    </section>
+
+    <!-- Sección 'Productos Disponibles' eliminada para evitar duplicados; usar tarjetas principales. -->
+
+    <footer class="professional-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tienda Online Educativa</h3>
+                <p>Tu destino confiable para tecnología y accesorios. Calidad garantizada y servicio excepcional.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">Facebook</a>
+                    <a href="#" class="social-link tiktok">Tiktok</a>
+                    <a href="#" class="social-link instagram">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                    <li><a href="tienda.html">Inicio</a></li>
+                    <li><a href="Articulo1.html">Articulo 1</a></li>
+                    <li><a href="Articulo2.html">Articulo 2</a></li>
+                    <li><a href="Articulo3.html">Articulo 3</a></li>
+                    <li><a href="Articulo4.html">Articulo 4</a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ info@tiendaonline.edu</li>
+                    <li>📍 Calle Principal 123, Ciudad</li>
+                    <li>🕒 Lun-Vie: 9AM-6PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir ofertas exclusivas</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tienda Online Educativa. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <div id="carrito-panel">
+        <div class="carrito-content">
+            <button class="close-carrito" onclick="cerrarCarrito()">×</button>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items"></div>
+            <div class="carrito-footer">
+                <label for="direccion-envio">Dirección de envío</label>
+                <textarea id="direccion-envio" placeholder="Escribe tu dirección completa"></textarea>
+                <div class="carrito-total">Total: <span id="carrito-total">$0.00</span></div>
+                <div class="carrito-actions">
+                    <button type="button" onclick="generarRecibo()">Enviar recibo por WhatsApp</button>
+                    <button type="button" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tienda.js"></script>
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+</body>
+</html>
